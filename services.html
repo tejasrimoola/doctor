@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Online Doctor Consultation</title>
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.services h2 {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.service-card {
+    background-color: #007bff;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color:black;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-cards {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+</style>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Online Doctor Consultation</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We provide top-notch online medical consultations, helping you access healthcare from the comfort of your home.</p>
+
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>General Consultation</h3>
+                    <p>Consult with our experienced general physicians for a wide range of health concerns and treatments.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Specialist Consultation</h3>
+                    <p>Get specialized advice from top doctors in areas like dermatology, pediatrics, gynecology, and more.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Medical Prescriptions</h3>
+                    <p>Receive prescriptions for medications directly from your doctor, ensuring a smooth and quick process.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Health Monitoring</h3>
+                    <p>Track your health metrics over time with our professional guidance to stay on top of your well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Doctor Consultation. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .about {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .about img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .team {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 2rem;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .doctor {
+            text-align: center;
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .doctor img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .doctor h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .doctor p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .doctor:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+            font-weight: 400;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Doctor Consultation</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We provide quick and affordable access to professional healthcare services from the comfort of your home.</p>
+                <img src="images/doctorpic2.webp" alt="About Us">
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h2>Meet Our Doctors</h2>
+                <div class="team-container">
+                    <div class="doctor">
+                        <img src="images/721.jpg" alt="Dr. Karthik Boda">
+                        <h3>Dr. Karthik Boda</h3>
+                        <p>Cardiologist</p>
+                    </div>
+                    <div class="doctor">
+                        <img src="images/b0.jpg" alt="Dr.Archana">
+                        <h3>Dr. Manivardhan Reddy</h3>
+                        <p>Neurologist</p>
+                    </div>
+                    <div class="doctor">
+                        <img src="images/a12.jpg" alt="Dr. Emily Davis">
+                        <h3>Dr. Manikanth Reddy</h3>
+                        <p>Dermatologist</p>
+                    </div>
+                    <div class="doctor">
+                        <img src="images/sun.jpg" alt="Dr. Michael Brown">
+                        <h3>Dr. Sunny</h3>
+                        <p>Pediatrician</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Doctor Consultation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

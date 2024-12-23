@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Online Doctor Consultation</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hover effect for navigation links */
+        header nav ul li a:hover {
+            background-color:white;
+            color: black;
+        }
+
+        .hero {
+            background: url('images/doctorpic1.jpg') no-repeat center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .hero .btn {
+            background: #ffc107;
+            color: black;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hover effect for the button */
+        .hero .btn:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffc107;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            footer {
+                padding: 1rem 0.5rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Doctor Consultation</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Consult a Doctor Anytime, Anywhere</h2>
+            <p>Your health is our priority. Connect with certified professionals 24/7.</p>
+            <a href="about.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Doctor Consultation. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
